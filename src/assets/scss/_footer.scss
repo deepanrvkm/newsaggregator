@@ -1,0 +1,14 @@
+// ***********************************
+// FOOTER
+// ***********************************
+.footer{
+    display: flex;
+    padding: 30px 0;
+    background: $dark-bg;
+    .copyright{
+        font-size: 12px;
+        font-weight: $light;
+        color: $data-bg;
+        letter-spacing: 1px;
+    }
+} 

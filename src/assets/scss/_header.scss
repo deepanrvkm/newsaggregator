@@ -1,0 +1,87 @@
+// ***********************************
+// HEADER
+// ***********************************
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: $dark-bg;
+    padding: 20px 0;
+    .logo{
+        padding: 20px 0 0;
+    }
+    .header-right{
+        display: flex;
+        justify-content: flex-end;
+        @media #{$tablet} {
+            justify-content: center;
+        }
+    }
+    .menu{
+        @media #{tablet} {
+            width: 100%;
+        }
+        @media #{$mobile-only} {
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            margin: 50px 0 0;
+            padding-right: 100px;
+            @media #{$tablet} {
+                padding-right: 0px;
+                margin: 30px 0 0;
+                width: 100%;
+                justify-content: center;
+            }
+            @media #{$mobile-only} {
+                padding-right: 0px;
+                margin: 30px 0 0;
+                width: 100%;
+                justify-content: center;
+            }
+            li{
+                padding: 0 20px;
+                a{
+                    color: $lighter;
+                    &:hover, &.active{
+                        color: $link-color;
+                    }
+                }
+            }
+        }
+    }
+    .wheather{
+        text-align: right;
+        padding-top: 30px;
+        @media #{$tablet} {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+        @media #{$mobile-only} {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+        .location{
+            letter-spacing: 1px;
+            margin-bottom: -10px;
+        }
+        .temp{
+            display: flex;
+            align-items: flex-end;
+            font-size: 32px;
+            font-weight: $medium;
+            padding: 0 0 5px;
+            strong{
+                font-weight: $regular;
+            }
+            .description{
+                font-size: 14px;
+                font-weight: $extralight;
+                padding-bottom: 2px;
+                padding-left: 10px;
+            }
+        }
+    }    
+}
